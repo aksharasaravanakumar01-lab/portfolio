@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshara | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
@@ -18,18 +20,19 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="toggle-theme">🌙</button>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="hero">
+  <section id="home" class="hero" data-aos="fade-up">
     <h1>Hello, I'm <span>Akshara S</span></h1>
     <p>Computer Science & Engineering Student | UI/UX Enthusiast</p>
     <a href="#contact" class="btn">Get in Touch</a>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
       Passionate about networking, programming, and UI/UX design. Skilled in Python and C programming with a strong understanding of data structures, algorithms, and core CS concepts. I enjoy solving coding problems, building creative solutions, and exploring new technologies.
@@ -37,7 +40,7 @@
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" data-aos="fade-left">
     <h2>Education</h2>
     <div class="edu-card">
       <h3>B.E. Computer Science and Engineering</h3>
@@ -52,7 +55,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" data-aos="zoom-in">
     <h2>Projects</h2>
     <div class="project-card">
       <h3>AutoPilotX - AI Automation Bot</h3>
@@ -65,7 +68,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>Technical Skills</h2>
     <ul>
       <li>Python, C</li>
@@ -77,7 +80,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:aksharasaravanakumar01@gmail.com">aksharasaravanakumar01@gmail.com</a></p>
     <p>Phone: <a href="tel:6380120209">6380120209</a></p>
@@ -88,6 +91,9 @@
     <p>© 2026 Akshara S | Portfolio</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
